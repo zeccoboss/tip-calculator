@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="ZECCO">
+  <meta name="description" content="Calculator for tip">
+  <title>Tip Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/0e02d2da8e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container div">
+    <header>
+      <h2>Tip Calculator</h2>
+      <div class="div">
+        <label for="inputArea">Bill:</label>
+        <br>
+        <input type="text" name="" id="inputArea" class="input-area" placeholder="Bill amount...">
+      </div>
+    </header>
+    <main class="main-body">
+      <!--Tab to edit-->
+      <div class="div">
+        <label for="">Tip:</label>
+        <br>
+        <p class="tip-result result" id="tipResultPct">10%</p>
+        <br>
+        <button type="submit" id="tipDecreaseBtn" class="buttons minus-pcnt"><i class="fa-solid fa-minus"></i></button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+
+        <button type="submit" id="tipIncreaseBtn" class="buttons plus-pcnt"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <div class="div">
+        <label for="tipResultPpl">People:</label>
+        <br>
+        <p class="pcnt-result result" id="tipResultPpl">2</p>
+        <br>
+        <button type="submit" id="pplDecreaseBtn" class="buttons minus-ppl"><i class="fa-solid fa-minus"></i></button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <button type="submit" id="pplIncreaseBtn" class="buttons plus-ppl" aria-label="Increase Tip Percentage"><i class="fa-solid fa-plus"></i></button>
+      </div>
+      <button type="submit" class="calculate" id="calculate" class="calculate">Calculate</button>
+      <button type="submit" id="clearAll" class="clear-all">Clear All</button>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
